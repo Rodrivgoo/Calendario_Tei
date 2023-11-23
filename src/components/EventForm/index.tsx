@@ -33,7 +33,7 @@ export const EventForm = ({ event }: IEventForm) => {
           value={event?.id || uuidv4()}
         />
         <label htmlFor="title" className="text-sm font-medium">
-          Title:
+          Título:
         </label>
         <input
           {...register('title', { required: true })}
@@ -42,7 +42,7 @@ export const EventForm = ({ event }: IEventForm) => {
           className="mb-2 rounded-lg bg-search p-2 text-sm font-medium text-navTitle"
         />
         <label htmlFor="description" className="text-sm font-medium">
-          Description:
+          Descripción:
         </label>
         <input
           {...register('description', { required: true })}
@@ -51,7 +51,7 @@ export const EventForm = ({ event }: IEventForm) => {
           className="mb-2 rounded-lg bg-search p-2 text-sm font-medium text-navTitle"
         />
         <label htmlFor="date" className="text-sm font-medium">
-          Date:
+          Fecha:
         </label>
         <input
           {...register('date', { required: true })}
@@ -60,7 +60,7 @@ export const EventForm = ({ event }: IEventForm) => {
           className="mb-2 rounded-lg bg-search p-2 text-sm font-medium text-navTitle"
         />
         <label htmlFor="time" className="text-sm font-medium">
-          Start at:
+          Hora de inicio:
         </label>
         <input
           {...register('startDate', { required: true })}
@@ -69,7 +69,7 @@ export const EventForm = ({ event }: IEventForm) => {
           className="mb-2 rounded-lg bg-search p-2 text-sm font-medium text-navTitle"
         />
         <label htmlFor="time" className="text-sm font-medium">
-          End at:
+          Hora de termino:
         </label>
         <input
           {...register('endDate', { required: true })}
@@ -78,7 +78,7 @@ export const EventForm = ({ event }: IEventForm) => {
           className="mb-2 rounded-lg bg-search p-2 text-sm font-medium text-navTitle"
         />
         <label htmlFor="type" className="text-sm font-medium">
-          Type of:
+          Tipo de operación:
         </label>
         <select
           {...register('type', { required: true })}
@@ -95,7 +95,7 @@ export const EventForm = ({ event }: IEventForm) => {
         {event ? (
           <span className="flex flex-row gap-x-2">
             <button className="mt-3 flex flex-1 justify-center rounded-lg bg-navHover py-2 px-4 text-primary transition-colors hover:bg-secondary hover:text-textHover">
-              Update
+              Actualizar
             </button>
             <button
               className="mt-3 flex rounded-lg bg-deleteBtn py-2 px-4 transition-colors hover:bg-deleteBtnHover hover:text-secondary"
@@ -105,12 +105,12 @@ export const EventForm = ({ event }: IEventForm) => {
                 setModal({ open: false })
               }}
             >
-              Delete
+              Eliminar
             </button>
           </span>
         ) : (
           <button className="mt-3 rounded-lg bg-navHover py-2 px-4 text-primary transition-colors hover:bg-secondary hover:text-textHover">
-            Create
+            Crear
           </button>
         )}
       </form>

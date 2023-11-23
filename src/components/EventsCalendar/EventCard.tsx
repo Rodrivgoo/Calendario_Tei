@@ -17,7 +17,7 @@ export const EventCard = (event: IEvents) => {
       onClick={() => {
         setModal({
           open: true,
-          title: <p>Update or Delete Event</p>,
+          title: <p>Actualizar o eliminar evento</p>,
           body: <EventForm event={event} />
         })
       }}

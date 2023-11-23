@@ -27,7 +27,7 @@ export const EventsCalendar = () => {
       <div className="w-80 py-8">
         {avoidHydration && <CalendarComponent getDate={getDate} />}
         <div className="mt-7 flex w-full flex-col">
-          <p className="mb-3">Events</p>
+          <p className="mb-3">Eventos</p>
 
           <div className="h-22 flex w-full flex-col overflow-y-auto py-4 scrollbar-thin">
             {events?.length ? (
@@ -37,7 +37,7 @@ export const EventsCalendar = () => {
                 </StrictMode>
               ))
             ) : (
-              <p className="p-4">Nothing to show</p>
+              <p className="p-4">Nada para mostrar</p>
             )}
           </div>
         </div>

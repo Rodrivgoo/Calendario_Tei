@@ -8,8 +8,8 @@ const Index = () => {
     <Main
       meta={
         <Meta
-          title="mi-calendar"
-          description="Mi-Calendar front-end challange"
+          title="Calendario De Quirófanos"
+          description="Calendario De Quirófanos"
         />
       }
     >

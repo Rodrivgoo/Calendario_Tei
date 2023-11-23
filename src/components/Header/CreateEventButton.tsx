@@ -9,14 +9,14 @@ export const CreateEventButton = () => {
       onClick={() => {
         setModal({
           open: true,
-          title: <p>Create Event</p>,
+          title: <p>Reservar Quirófano</p>,
           body: <EventForm />
         })
       }}
       className="group rounded-lg bg-button py-2 px-4 transition-colors hover:opacity-80"
     >
       <p className="text-sm font-normal text-eventBtn group-hover:text-textHover">
-        + Create event
+        + Reservar Quirófano
       </p>
     </button>
   )
